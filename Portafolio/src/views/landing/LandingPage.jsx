@@ -20,26 +20,26 @@ function LandingPage() {
           <nav className={styles.menu}>
             <ul>
               <li>
-                <a href="" className={styles.items}>acerca de</a>
+                <a href="" className={styles.items}>Acerca de</a>
               </li>
               <li>
-                <a href="" className={styles.items}>experiencia</a>
+                <a href="" className={styles.items}>Experiencia</a>
               </li>
               <li>
-                <a href="" className={styles.items}>trabajos</a>
+                <a href="" className={styles.items}>Trabajos</a>
               </li>
               <li>
-                <a href="" className={styles.items}>contactos</a>
+                <a href="" className={styles.items}>Contactos</a>
               </li>
               <li>
-                <a href="" className={styles.button_cv}>resumen</a>
+                <a href="" className={styles.button_cv}>Resumen</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
 
-      <div className={styles.main2}>
+      <div className={styles.cuerpo}>
         <div className={styles.container}>
           <div className={styles.informacion}>
             <div className={styles.pre}>
@@ -57,10 +57,11 @@ function LandingPage() {
               Desarrollador Full Stack, estoy entusiasmado por aplicar mi pasión por la programación y seguir aprendiendo en un entorno profesional estimulante.
               </p>
             </div>
+          </div>
             <div className={styles.imagen_profile}>
               <img src={LogoImagen1} alt="profile_imagen" title="profile_imagen" className={styles.profileI}></img>
             </div>
-          </div>
+
         </div>
       </div>
 
@@ -90,6 +91,61 @@ function LandingPage() {
             <WhatsAppIcon />
           </a>
       </div>
+      {/* <div className={styles.bubbles}>
+        <span style={{'--i': 11}}></span>
+      </div> */}
+            <div className={styles.bubbles}>
+              <span style={{'--i': 31}}></span>
+              <span style={{'--i': 25}}></span>
+              <span style={{'--i': 21}}></span>
+              <span style={{'--i': 27}}></span>
+              {/* <span style={{'--i': 39}}></span> */}
+              {/* <span style={{'--i': 10}}></span>
+              <span style={{'--i': 32}}></span> */}
+              {/* <span style={{'--i': 24}}></span>
+              <span style={{'--i': 16}}></span>
+              <span style={{'--i': 18}}></span>
+              <span style={{'--i': 30}}></span>
+              <span style={{'--i': 21}}></span> */}
+              {/* <span style={{'--i': 23}}></span>
+              <span style={{'--i': 30}}></span>
+              <span style={{'--i': 17}}></span> */}
+              {/* <span style={{'--i': 39}}></span>
+              <span style={{'--i': 20}}></span> */}
+              <span style={{'--i': 12}}></span>
+              <span style={{'--i': 14}}></span>
+              <span style={{'--i': 33}}></span>
+              {/* <span style={{'--i': 28}}></span>
+              <span style={{'--i': 21}}></span>
+              <span style={{'--i': 32}}></span>
+              <span style={{'--i': 13}}></span>
+              <span style={{'--i': 34}}></span>
+              <span style={{'--i': 25}}></span>
+              <span style={{'--i': 16}}></span> */}
+              <span style={{'--i': 17}}></span>
+              {/* <span style={{'--i': 38}}></span>
+              <span style={{'--i': 21}}></span>
+              <span style={{'--i': 29}}></span> */}
+              <span style={{'--i': 34}}></span>
+              {/* <span style={{'--i': 15}}></span>
+              <span style={{'--i': 33}}></span> */}
+              {/* <span style={{'--i': 21}}></span>
+              <span style={{'--i': 18}}></span>
+              <span style={{'--i': 16}}></span>
+              <span style={{'--i': 30}}></span> */}
+              {/* <span style={{'--i': 22}}></span>
+              <span style={{'--i': 20}}></span>
+              <span style={{'--i': 39}}></span> */}
+              <span style={{'--i': 17}}></span>
+              {/* <span style={{'--i': 35}}></span>
+              <span style={{'--i': 23}}></span>
+              <span style={{'--i': 11}}></span>
+              <span style={{'--i': 10}}></span>
+              <span style={{'--i': 38}}></span> */}
+              <span style={{'--i': 26}}></span>
+              <span style={{'--i': 24}}></span>
+              <span style={{'--i': 32}}></span>
+            </div>
     </main>
   );
 }
