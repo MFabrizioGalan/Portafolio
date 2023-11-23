@@ -49,7 +49,7 @@ function LandingPage() {
             </div>
             <div className={styles.profile}>
               <h1>
-                Manuel Fabrizio
+                MANUEL FABRIZIO
               </h1>
             </div>
             <div className={styles.description}>

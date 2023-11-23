@@ -153,10 +153,10 @@
 }
 @keyframes animate {
   0%{
-    transform: translateY(50px) scale(0);
+    transform: translateY(100px) scale(0);
   }
   100%{
-    transform: translateY(-750px) scale(0.5);
+    transform: translateY(-750px) scale(0.3);
   }
 }
 .mainContainer{
@@ -180,7 +180,7 @@
   );
   background-size: 200% 200%;
 
-  animation: movimiento 5s linear infinite alternate;
+  animation: movimiento 10s linear infinite alternate;
 }
 .head{
   display: flex;
@@ -193,7 +193,6 @@
   display: flex;
   align-items: center;
   width: 80px;
-
 }
 .logo img{
   margin: 10px;
@@ -215,6 +214,12 @@
   font-size: 20px;
   text-decoration: none;
   color: #fffce1;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 300;
+  transition: 1s;
+}
+.items:hover{
+  scale: 1.1;
 }
 .button_cv{
   display: flex;
@@ -224,6 +229,10 @@
   border: 3px solid #f3520c;
   border-radius: 10px;
   padding: 10px;
+  transition: .3s;
+}
+.button_cv:hover{
+  scale: 1.1;
 }
 .cuerpo{
   display: flex;
@@ -258,7 +267,10 @@
   font-size: 20px;
   align-items: flex-end;
   color: #fffce1;
-
+}
+.pre p{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 600;
 }
 .profile{
     /* background-color: #7ecc00; */
@@ -266,9 +278,59 @@
   flex-grow: 1;
   font-size: 40px;
   align-items: center;
-  width: 100%;
+  width: 120%;
   color: #fffce1;
 }
+.profile h1 {
+  display: block;
+  font-family: monospace;
+  /* font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700; */
+  /* letter-spacing: 0.05em; */
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 15ch;
+  overflow: hidden;
+
+  animation: typing-blink 12s steps(15) infinite;
+}
+
+@keyframes typing-blink {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 15ch;
+  }
+  50% {
+    border-color: transparent;
+  }
+  60% {
+    border-color: transparent;
+  }
+  100% {
+    width: 15ch;
+    border-color: transparent;
+  }
+}
+
+/* .profile h1{
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 15ch;
+
+  animation: typing 2s steps(15) infinite,
+  blink .5s 2s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing{
+  from { width: 0}
+}
+@keyframes blink{
+  50% {border-color: transparent}
+} */
 .description{
   /* background-color: #ccbe00; */
   display: flex;
@@ -277,10 +339,15 @@
   width: 100%;
   color: #fffce1;
 }
+.description p{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 300;
+}
 .imagen_profile{
   /* background-color: antiquewhite; */
   width: 30%;
   margin-left: 3% ;
+  scale: 1;
 
   overflow: hidden;
 }
@@ -300,6 +367,12 @@
 }
 .footer a{
   color: #fffce1;
+  transition: 1s;
+
+}
+.footer a:hover{
+  /* color: #f3520c; */
+  scale: 1.2;
 
 }
 /* .mainContainer::before,
@@ -341,14 +414,76 @@
   animation-duration: calc(300s / var(--i));
 }
 .bubbles span:nth-child(even){
-  background: #f3520c;
-  box-shadow: 0 0 0 10px #f3520c44,
-  0 0 50px #f3520c,
-  0 0 100px #f3520c;
+  background: #0ac1c1;
+  box-shadow: 0 0 0 10px #0ac1c144,
+  0 0 50px #0ac1c1,
+  0 0 100px #0ac1c1;
 }
 @media screen and (max-width:480px){
-  .head{
-    /* background-color: #f3520c; */
-    height: 30px;
+  *{
+    margin: 0;
+    padding: 0;
   }
+  @keyframes movimiento {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+  @keyframes animate {
+    0%{
+      transform: translateY(50px) scale(0);
+    }
+    100%{
+      transform: translateY(-600px) scale(0.3);
+    }
+  }
+  .mainContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    background-image: linear-gradient(
+    to bottom right,
+    #000219 0%,
+    #001a33 20%,
+    #003366 40%,
+    #00509e 60%,
+    #0077cc 80%
+  );
+  background-size: 200% 200%;
+  animation: movimiento 10s linear infinite alternate;
+  }
+  .head{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: #003366;
+  }
+  .logo img{
+    margin: 5px;
+    width: 100%;
+    background-color: aqua;
+  }
+  .navegation {
+    display: flex;
+    /* margin-right: 20px; */
+    background-color: #f3520c;
+  }
+
 }
