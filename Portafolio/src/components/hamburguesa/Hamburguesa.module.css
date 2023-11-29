@@ -1,0 +1,26 @@
+/* HamburguerMenu.module.css */
+.menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .open2 {
+    opacity: 0;
+  }
+  
+  .open3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
