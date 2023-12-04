@@ -10,7 +10,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import LogoImagen from "../../assets/logo-programador2-sinfondo.png";
+import LogoImagen3 from "../../assets/logo-programador2-sinfondo.png";
 import LogoImagen1 from "../../assets/yo-dibujo-sinfondo.png";
 import MenuIcon from '@mui/icons-material/Menu';
 import p1 from "../../assets/proyecto1.png";
@@ -120,7 +120,7 @@ function LandingPage() {
       <div className={styles.head}>
         <div className={styles.headContainer}>
         <div className={styles.logo}>
-          <img src={LogoImagen} alt="logo_imagen" title="logo_imagen"></img>
+          <img src={LogoImagen3} alt="logo_imagen" title="logo_imagen"></img>
         </div>
         <div className={styles.navegation}>
           <nav className={styles.menu}>
