@@ -10,7 +10,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import LogoImagen from "../../assetS/logo-programador2-sinfondo.png";
+import LogoImagen from "../../assets/logo-programador2-sinfondo.png";
 import LogoImagen1 from "../../assets/yo-dibujo-sinfondo.png";
 import MenuIcon from '@mui/icons-material/Menu';
 import p1 from "../../assets/proyecto1.png";
