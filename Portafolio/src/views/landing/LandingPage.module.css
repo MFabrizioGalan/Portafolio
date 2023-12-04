@@ -363,7 +363,7 @@
   background-position: center center;
   background-size: cover;
   /* height: 100vh; */
-  max-width: 1400px;
+  /* max-width: 1400px; */
 
   
 
@@ -389,8 +389,9 @@
   width: 100%;
   z-index: 2;
   top: 0;
-  background-color: #0ac1c1;
-  max-width: 1400px;
+  background-color: #22252d8a;
+  z-index: 3;
+  /* max-width: 1400px; */
 }
 .headContainer{
   max-height: 80px;
@@ -429,13 +430,12 @@
   transition: 0.5s;
 }
 .redes a:hover{
-  /* color:  #cfe4ff; */
   color: #19d59a;
 }
 
 
 .cuerpo{
-  max-width: 1100px;
+  /* max-width: 1100px; */
   height: 95vh;
   margin: auto;
   color: #fffce1;
@@ -540,6 +540,7 @@
 .imagen_profile img{
   width: 100%;
 }
+
 .bubbles{
   position: relative;
   height: 5vh;
@@ -579,10 +580,10 @@
 
 
 .habilidadesContainer{
-  max-width: 1400px;
+  /* max-width: 1400px; */
   height: 100vh;
   /* background: linear-gradient(rgba(0, 2, 25, 0.3), rgba(33, 16, 16, 0.3)),url("../../assets/skills.jpg"); */
-  background: linear-gradient(rgba(34, 37, 45, 0.5), rgba(34, 37, 45, 0.5)), url("../../assets/skills.jpg");
+  /* background: linear-gradient(rgba(34, 37, 45, 0.5), rgba(34, 37, 45, 0.5)), url("../../assets/skills.jpg"); */
   /* background-color: #22252d; */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -590,6 +591,21 @@
   background-position: center center;
   padding: 180px 0;
   text-align: center;
+  background-image: linear-gradient(
+    to bottom right,
+    /* #000219 0%,
+    #001a33 20%,
+    #003366 40%,
+    #00509e 60%,
+    #0077cc 80% */
+    #22252d 0%,
+    #343946 20%,
+    #3b4251 40%,
+    #444d60 60%,
+    #535f76 80%
+  );
+  background-size: 200% 200%;
+  animation: movimiento 10s linear infinite alternate;
   /* color: #1bd8a0; */
 }
 .habilidadesContainer h3{
@@ -694,7 +710,7 @@
 
 
 .proyectosContainer{
-  max-width: 1400px;
+  /* max-width: 1400px; */
   padding: 80px 0;
   /* background-color: #000219; */
   background-image: linear-gradient(
@@ -732,13 +748,37 @@
   gap: 15px;
   margin: 30px 0;
 }
-.proyecto{
+/* .proyecto{
   max-width: 475px;
-  border: 1px solid #fffce1;
+  border: 1px solid #1bd8a0;
   margin: 0 10px;
   position: relative;
   overflow: hidden;
+} */
+.proyecto {
+  max-width: 475px;
+  border: 1px solid transparent;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease-in-out;
 }
+
+.proyecto:hover {
+  border-color: #1bd8a0;
+  box-shadow: 0 0 10px #1bd8a0, 0 0 20px #1bd8a0, 0 0 30px #1bd8a0;
+  animation: neon-animation 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-animation {
+  0% {
+    border-color: #1bd8a0;
+  }
+  100% {
+    border-color: #1bd8a0;
+  }
+}
+
 .proyecto img{
   width: 100%;
   height: 100%;
@@ -768,26 +808,43 @@
 
 
 .contactoContainer{
-  max-width: 1400px;
+  /* max-width: 1400px; */
   padding: 100px 15px;
-  background-color: #003366;
+  /* background-color: #003366; */
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    /* #000219 0%,
+    #001a33 20%,
+    #003366 40%,
+    #00509e 60%,
+    #0077cc 80% */
+    #22252d 0%,
+    #343946 20%,
+    #3b4251 40%,
+    #444d60 60%,
+    #535f76 80%
+  );
+  background-size: 200% 200%;
+  animation: movimiento 10s linear infinite alternate;
 }
 .tituloContacto{
-  margin-bottom: 20px;
   text-align: center;
   font-size: 20px;
+  text-shadow: 0 0 1px #1bd8a0, 0 0 1px #1bd8a0, 0 0 1px #1bd8a0;
+  color: #1bd8a0;
+  
   text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
-  color: #fffce1;
+  text-decoration-color: #12cbaf;
+  text-decoration-thickness: 1px;
 }
 .contactoForm{
   width: 70%;
   max-width: 1100px;
   margin: auto;
+  margin-top: 20px;
 }
 .contactoForm form{
   /* background-color: #001a33; */
@@ -838,15 +895,16 @@
   padding: 10px;
   border-radius: 20px;
   border: none;
-  border: 1px solid #919191;
+  border: 2px solid #fffce1;
   font-weight: bold;
 }
 .enviar:hover{
-  background-color: #00509e;
-  color: #d3d3d3;
+  color: #fffce1;
+  border: 2px solid #19d59a;
+  background-color: #19d59a;
 }
 footer{
-  background-color: #003366;
+  background-color: #22252d;
   color: #d3d3d3;
   max-width: 1400px;
   text-align: center;
