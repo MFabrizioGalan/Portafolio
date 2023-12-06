@@ -144,7 +144,7 @@ function LandingPage() {
           </nav>
         </div>
           <div className={styles.hamburguesa1}>
-            <MenuIcon/>
+            <a><MenuIcon fontSize="small" /></a>
           </div>
           <div className={styles.redes}>
           <a
@@ -153,7 +153,7 @@ function LandingPage() {
             title="LinkedIn"
             rel="noopener noreferrer"
           >
-            <LinkedInIcon />
+            <LinkedInIcon fontSize="large" />
           </a>
           <a
             href="https://github.com/MFabrizioGalan"
@@ -161,7 +161,7 @@ function LandingPage() {
             title="GitHub"
             rel="noopener noreferrer"
           >
-            <GitHubIcon />
+            <GitHubIcon fontSize="large" />
           </a>
         </div>
         </div>

@@ -362,7 +362,7 @@
 .mainContainer{
   background-position: center center;
   background-size: cover;
-  /* height: 100vh; */
+  height: 100vh;
   /* max-width: 1400px; */
 
   
@@ -390,11 +390,9 @@
   z-index: 2;
   top: 0;
   background-color: #22252d8a;
-  z-index: 3;
-  /* max-width: 1400px; */
 }
 .headContainer{
-  max-height: 80px;
+  max-height: 15%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -417,16 +415,25 @@
   color:  #fffce1;
   margin: 0 12px;
   font-weight: 400;
+  font-size: 1.5rem;
   transition: 0.5s;
 }
 .navegation nav ul li a:hover{
-  /* color:  #a8cbff; */
   color:  #19d59a;
+}
+.hamburguesa1{
+  display: none;
+}
+.redes{
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
 }
 .redes a{
   text-decoration: none;
+  width: 2rem;
+  height: 2rem;
   color:  #fffce1;
-  display: inline-block;
   transition: 0.5s;
 }
 .redes a:hover{
@@ -437,6 +444,7 @@
 .cuerpo{
   /* max-width: 1100px; */
   height: 95vh;
+  /* height: 95%; */
   margin: auto;
   color: #fffce1;
   display: flex;
@@ -444,7 +452,9 @@
 }
 .container{
   display: flex;
-  width: 100%;
+  margin-top: 1rem;
+  width: 100vw;
+  height: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -454,32 +464,41 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  width: 48%;
-  height: 70%;
+  width: 50vw;
+  height: 80vh;
   z-index: 2;
+  /* overflow: hidden; */
 }
 .pre{
   display: flex;
+  margin-top: 1.5rem;
+  /* height: 15%; */
   flex-grow: 1;
-  font-size: 18px;
+  font-size: 1.3rem;
   align-items: flex-end;
   color: #fffce1;
+  /* background-color: #0ac1c1; */
 }
 .profile{
   display: flex;
   flex-grow: 1;
-  font-size: 35px;
+  font-size: 2.5rem;
   align-items: center;
   width: 100%;
+  /* height: 20%; */
   color: #fffce1;
+  /* background-color: #3f5c5c; */
+
 }
 .profile h1 {
   display: block;
   font-family: monospace;
   white-space: nowrap;
-  border-right: 4px solid;
-  width: 12ch;
-  overflow: hidden;
+  border-right: 0.2rem solid;
+  width: 33rem;
+  /* height: 10vh; */
+  /* background-color: #0ac1c1; */
+  /* overflow: hidden; */
 
   animation: typing-blink 12s steps(12) infinite;
 }
@@ -489,7 +508,7 @@
     width: 0;
   }
   40% {
-    width: 12ch;
+    width: 33rem;
   }
   50% {
     border-color: transparent;
@@ -498,28 +517,35 @@
     border-color: transparent;
   }
   100% {
-    width: 12ch;
+    width: 33rem;
     border-color: transparent;
   }
 }
 .description{
   display: flex;
   flex-grow: 1;
-  font-size: 20px;
+  font-size: 1.3rem;
   width: 100%;
+  /* height: 15vh; */
+  /* height: 30%; */
   color: #fffce1;
-  z-index: 2;
+  /* z-index: 2; */
+  /* background-color: #19d59a; */
 }
 .ver{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  /* height: 20%; */
+  /* background-color: #36f0cb; */
+  font-size: 1rem;
 }
 .ver a{
   text-decoration: none;
   color: #fffce1;
-  padding: 10px 15px;
-  border: 2px solid #fffce1;
+  /* padding: 10px 15px; */
+  padding: 1rem 1rem;
+  border: 0.2rem solid #fffce1;
   border-radius: 50px;
   font-weight: bold;
   transition: 0.5s;
@@ -530,7 +556,7 @@
   background-color: #19d59a;
 }
 .imagen_profile{
-  width: 35%;
+  width: 30vw;
   margin-left: 3% ;
   scale: 1;
   z-index: 2;
@@ -906,18 +932,21 @@
 footer{
   background-color: #22252d;
   color: #d3d3d3;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   text-align: center;
   padding: 5px 0;
 }
 @media screen and (max-width:800px) {
+  .headContainer{
+    max-height: 12vh;
+  }
   .redes{
     display: none;
   }
   nav{
     display: none;
   }
-  nav.resposive{
+  /* nav.responsive{
     display: block;
     background-color:#0ac1c1;
     width: 100%;
@@ -932,8 +961,74 @@ footer{
   }
   nav.responsive ul li{
     margin: 5px 0;
-  }
+  } */
   .hamburguesa1{
+    display: flex;
+    height: 8vh;
+    width: 4vw;
+    justify-content: center;
+    align-items: center;
+    color: #fffce1;
+    /* transition: 0.5s; */
+  }
+  .hamburguesa1 a{
+    text-decoration: none;
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    color:  #fffce1;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburguesa1 a:hover{
+    color: #19d59a;
+  }
+  .pre{
+    font-size: 0.8rem;
+  }
+  .profile{
+    font-size: 1.25rem;
+  }
+  .profile h1 {
     display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 0.1rem solid;
+    width: 16.33333rem;
+    /* height: 10vh; */
+    /* background-color: #0ac1c1; */
+    /* overflow: hidden; */
+  
+    animation: typing-blink 12s steps(12) infinite;
+  }
+  @keyframes typing-blink {
+    0% {
+      width: 0;
+    }
+    40% {
+      width: 16.33333rem;
+    }
+    50% {
+      border-color: transparent;
+    }
+    60% {
+      border-color: transparent;
+    }
+    100% {
+      width: 16.33333rem;
+      border-color: transparent;
+    }
+  }
+  .description{
+    font-size: 0.8rem;
+  }
+  .ver {
+    font-size: 0.5rem;
+  }
+  .ver a{
+    font-size: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border: 0.1rem solid #fffce1;
   }
 }
